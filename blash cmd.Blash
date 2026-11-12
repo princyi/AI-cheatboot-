@@ -1,0 +1,192 @@
+  1  pwd
+    2  ls
+    3  ls -l
+    4  ls -a
+    5  cd
+    6  cd ..
+    7  cd ~
+    8  whoami
+    9  data
+   10  history
+   11  mkdir folder1
+   12  touch file.txt
+   13  pwd
+   14  cd~/Documents
+   15  clear
+   16  pwd
+   17  cd ~/documents
+   18  lsls
+   19  ls
+   20  lsDocuments
+   21  ls -la~
+   22  mkdir -p~/Documents
+   23  cd~/Documents
+   24  cd/home/csc/Documents
+   25  pwd
+   26  cd /home/csc/Documents
+   27  mkdir Linux_Praftice
+   28  cd Linux_Pratice
+   29  cd Linux_Praftice
+   30  touch notes.txt
+   31  cd /home/csc/Documents
+   32  cd Linux_praftice
+   33  nano notes.txt
+   34  Linux_Praftice/my_notes.txt
+   35  note.txt
+   36  notes.txt
+   37  ls Linux_Praftice
+   38  cat linux_Praftice/notes.txt
+   39  cat linux_Praftice/my_notes.txt
+   40  cat notes.txt
+   41  cd ~/Documents/Linux_Praftice
+   42  pwd
+   43  ls -l
+   44  cp my_notes.txt backup.txt
+   45  ls
+   46  clear
+   47  sudo apt update
+   48  apt list --upgradable
+   49  sudo snap install code --classic
+   50  code
+   51  code .
+   52  code ~/Document/Linux_Pratice
+   53  python3 --version
+   54  code ~/Documents/Linux_Pratice
+   55  python3 hellow.py
+   56  clear
+   57  whoami
+   58  id csc
+   59  sudo usermod -| princy csc
+   60  sudo usermod -d/home/princy -mprincy
+   61  whoami
+   62  id csc
+   63  sudo adduser tempadmin
+   64  cd
+   65  mkdir llm-docker-projects
+   66  cd llm-docker-project
+   67  code.
+   68  free -h
+   69  df -h/
+   70  df -h /
+   71  python3 app.py
+   72  sudo docker ps
+   73  git --version 
+   74  git config --global dser.name "Princy"
+   75  git config --global user.email
+   76  princykshirsagar@gmail.com
+   77  git config --list
+   78  clear
+   79  pyhon3 aap.py
+   80  python3 app.py
+   81  sudo docker ps
+   82  sodo docker ps
+   83  sudo docker build -t my-llm-chatbot .
+   84  sudo docker images
+   85  sudo Docker ps
+   86  sudo Docker image
+   87  sodo Docker ps
+   88  cd ~/llm-docker-projects
+   89  ls -la
+   90  sudo docker build -t my-llm-chatbot .
+   91  sudo docker image
+   92  docker ps -a
+   93  sudo docker ps -a
+   94  sudo docker image ls
+   95  cat Dockerfile 
+   96  ls -la
+   97  cat Dockerfile 
+   98  sudo docker build -t my-llm-chatbot .
+   99  sudo docker image ls
+  100  sudo docker ps -a
+  101  sudo docker build -t my-llm-chatbot:dev .
+  102  sudo docker image ls
+  103  sudo docker run -it --name my-llm-container --network host my-llm-chatbot
+  104  sudo docker ps -a
+  105  sudo docker start -ai my-llm-container
+  106  history
+  107  sudo docker ps -a
+  108  history
+  109  sudo docker start -ai my-llm-container
+  110  sudo docker ps -a
+  111  sudo docker start -ai my-llm-container
+  112  sudo docker ps -a
+  113  ~/llm-docker-projects
+  114  cd ~/llm-docker-projects
+  115  ls -la
+  116  git init
+  117  git config --global user.name "Princy"
+  118  git config --global user.email "your-github-email@example.com"
+  119  git add .
+  120  git commit -m "Initial Docker chatbot project"
+  121  git remote add origin https://github.com/princyi/llm-docker-projects
+  122  git branch -M main
+  123  git push -u origin main
+  124  git add .
+  125  git commit -m "Save latest project changes"
+  126  git push~
+  127  git add .
+  128  git commit -m "Save latest project changes"
+  129  git push
+  130  history
+  131  python3 app.py
+  132  clear
+  133  cd ~ /llm-docker-project
+  134  ls
+  135  cd ~/llm-docker-projects
+  136  ls
+  137  python3 app.py
+  138  ollama --version
+  139  curl -fsSL https://ollama.com/install.sh | sh
+  140  ollama --version
+  141  ollama list
+  142  what is ai
+  143  ollama pull qwen2.5:0b
+  144  ollama run qwen2.5:0.5b
+  145  history
+  146  clear
+  147  sudo apt update && sudo apt install python3 python3-pip -y
+  148  python3 -m pip install mlflow
+  149  sudo apt update
+  150  sudo apt install python3 python3-pip python3-venv -y~
+  151  sudo apt update
+  152  sudo apt install python3 python3-pip python3-venv -y
+  153  python3 -m venv mlflow-env
+  154  source mlflow-env/bin/activate~
+  155  python3 -m venv mlflow-env
+  156  source mlflow-env/bin/activate
+  157  pip install mlflow
+  158  mlflow server --port 5000
+  159  df -h/
+  160  pkill -f code
+  161  pkill firefox
+  162  df -h /
+  163  cd~ /llm-docker-projects
+  164  cd ~ /llm-docker-projects
+  165  firefox --safe-mode
+  166  cd ~/llm-docker-projects
+  167  docker build -t my-llm-chatbot:latest .
+  168  minikube image load my-llm-chatbot:latest
+  169  kubectl set env deployment/llm-chatbot MLFLOW_TRACKING_URI=http://host.minikube.internal:5001
+  170  kubectl rollout restart deployment/llm-chatbot
+  171  kubectl rollout status deployment/llm-chatbot
+  172  curl http://localhost:5001/health
+  173  ps aux | grep '[m]lflow server'
+  174  sudo ss -lntp | grep 5001
+  175  cd ~/llm-docker-projects
+  176  python3 -m pip install mlflow
+  177  mlflow server   --host 0.0.0.0   --port 5001   --backend-store-uri sqlite:///mlflow.db   --artifacts-destination ./mlartifacts
+  178  sudo apt install 
+  179  cd ~/llm-docker-projects
+  180  sudo apt update
+  181  sudo apt install -y python3-venv python3-full
+  182  python3 -m venv mlflow-env
+  183  source mlflow-env/bin/activate
+  184  python -m pip install --upgrade pip
+  185  python -m pip install mlflow
+  186  mlflow server   --host 0.0.0.0   --port 5001   --backend-store-uri sqlite:///mlflow.db   --artifacts-destination ./mlartifacts~
+  187  mlflow server   --host 0.0.0.0   --port 5001   --backend-store-uri sqlite:///mlflow.db   --artifacts-destination ./mlartifacts
+  188  mlflow server   --host 0.0.0.0   --port 5001   --backend-store-uri sqlite:///mlflow.db   --artifacts-destination ./mlartifacts~
+  189  mlflow server   --host 0.0.0.0   --port 5001   --backend-store-uri sqlite:///mlflow.db   --artifacts-destination ./mlartifacts
+  190  docker build -t my-llm-chatbot:latest .
+  191  minikube image load my-llm-chatbot:latest
+  192  history
