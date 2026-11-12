@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: llm-chatbot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: llm-chatbot
+  template:
+    metadata:
+      labels:
+        app: llm-chatbot
+    spec:
+      containers:
+        - name: chatbot
+          image: my-llm-chatbot:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+          env:
+            - name: OLLAMA_URL
+              value: "http://host.minikube.internal:11434/api/generate"

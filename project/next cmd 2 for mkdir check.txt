@@ -1,0 +1,96 @@
+csc@csc-VMware-Virtual-Platform:~/llm-docker-projects$ minikube image build -t llm-chatbot:v2
+
+❌  Exiting due to MK_USAGE: Please provide a path or url to build
+
+csc@csc-VMware-Virtual-Platform:~/llm-docker-projects$ minikube image build -t llm-chatbot:v2 .
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 206B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 3.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 7.10kB done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.12-slim@sha256:b18b261e1b4974b4f321451ad5251ded85abb22c2b8b262da527dda1d031ab30
+#5 resolve docker.io/library/python:3.12-slim@sha256:b18b261e1b4974b4f321451ad5251ded85abb22c2b8b262da527dda1d031ab30 0.0s done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 DONE 0.0s
+
+#7 [3/5] COPY requirements.txt .
+#7 DONE 0.0s
+
+#8 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#8 2.445 Collecting Flask<4,>=3.0 (from -r requirements.txt (line 1))
+#8 2.708   Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+#8 2.792 Collecting requests (from -r requirements.txt (line 2))
+#8 2.833   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+#8 2.878 Collecting blinker>=1.9.0 (from Flask<4,>=3.0->-r requirements.txt (line 1))
+#8 2.919   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#8 2.974 Collecting click>=8.1.3 (from Flask<4,>=3.0->-r requirements.txt (line 1))
+#8 3.013   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#8 3.054 Collecting itsdangerous>=2.2.0 (from Flask<4,>=3.0->-r requirements.txt (line 1))
+#8 3.096   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#8 3.147 Collecting jinja2>=3.1.2 (from Flask<4,>=3.0->-r requirements.txt (line 1))
+#8 3.187   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#8 3.307 Collecting markupsafe>=2.1.1 (from Flask<4,>=3.0->-r requirements.txt (line 1))
+#8 3.348   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+#8 3.400 Collecting werkzeug>=3.1.0 (from Flask<4,>=3.0->-r requirements.txt (line 1))
+#8 3.441   Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+#8 3.663 Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 2))
+#8 3.702   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+#8 3.790 Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 2))
+#8 3.833   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#8 3.894 Collecting urllib3<3,>=1.26 (from requests->-r requirements.txt (line 2))
+#8 3.937   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+#8 3.992 Collecting certifi>=2023.5.7 (from requests->-r requirements.txt (line 2))
+#8 4.035   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+#8 4.085 Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+#8 4.162 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#8 4.219 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#8 4.262 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+#8 4.335 Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+#8 4.422 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#8 4.470 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#8 4.517 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#8 4.559 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#8 4.609 Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+#8 4.651 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#8 4.702 Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+#8 4.765 Installing collected packages: urllib3, markupsafe, itsdangerous, idna, click, charset_normalizer, certifi, blinker, werkzeug, requests, jinja2, Flask
+#8 5.395 Successfully installed Flask-3.1.3 blinker-1.9.0 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.5.0 idna-3.20 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.4 requests-2.34.2 urllib3-2.8.0 werkzeug-3.1.9
+#8 5.396 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#8 5.704 
+#8 5.704 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#8 5.704 [notice] To update, run: pip install --upgrade pip
+#8 DONE 5.9s
+
+#9 [5/5] COPY app.py .
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 0.7s done
+#10 exporting manifest sha256:62112bf8bc510031937f799ba1f324e94539db8e339334ea6fe05dd042e5e629 done
+#10 exporting config sha256:a78f487743c3b2cb6dd6ea8fb9e9f5a1c7e1baf1831eede21d3a512aef9272e5 done
+#10 naming to docker.io/library/llm-chatbot:v2 done
+#10 DONE 0.8s
+csc@csc-VMware-Virtual-Platform:~/llm-docker-projects$ kubectl set image deployment/llm-chatbot chatbot=llm-chatbot:v2
+deployment.apps/llm-chatbot image updated
+csc@csc-VMware-Virtual-Platform:~/llm-docker-projects$ kubectl rollout status deployment/llm-chatbot
+deployment "llm-chatbot" successfully rolled out
+csc@csc-VMware-Virtual-Platform:~/llm-docker-projects$ kubectl get pods
+NAME                           READY   STATUS    RESTARTS   AGE
+llm-chatbot-6f5b8bf4b6-85fkj   1/1     Running   0          36s
+csc@csc-VMware-Virtual-Platform:~/llm-docker-projects$ 
+csc@csc-VMware-Virtual-Platform:~/llm-docker-projects$ http://localhost:8081
+bash: http://localhost:8081: No such file or directory
+csc@csc-VMware-Virtual-Platform:~/llm-docker-projects$ 
